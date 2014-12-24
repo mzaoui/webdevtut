@@ -1,50 +1,11 @@
-body {
-    margin: 0;
-}
-
-header {
+.darkBG {
     background: #999;
-    color: white;
-    padding: 15px 15px 0 15px;
 }
 
-nav h1 {
-    margin: 0;
-    display: inline;
+.darkerBG {
+    background: #666;
 }
 
-nav ul {
-    margin: 0;
-    padding: 0 0 0 15px;
-    display: inline;
-}
-
-nav ul li {
-    background-color: black;
-    color: white;
-    display: inline-block;
-    list-style-type: none;
-    padding: 5px 15px;
-}
-
-nav ul li a {
-    color: white;
-}
-
-.row {
-    clear: both;
-}
-
-.col {
+.darkestBG {
     background: #333;
-    color: white;
-    border-radius: 5px;
-    float: left;
-    margin: .5%;
-    padding: 10px .5%;
-    width: 31%;
-}
-
-footer {
-    clear: both;
 }
