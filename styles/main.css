@@ -1,28 +1,50 @@
 body {
+    margin: 0;
+}
+
+header {
     background: #999;
-    font-family: arial;
-}
-
-h1, h2 {
-    color: blue;
-}
-
-a {
-    color: green;
-}
-
-p {
-    background: #666;
     color: white;
-    padding: 10px 5px;
+    padding: 15px 15px 0 15px;
 }
 
-.secondary {
-    background: none;
-    color: #777;
+nav h1 {
+    margin: 0;
+    display: inline;
 }
 
-#special {
-    background: red;
+nav ul {
+    margin: 0;
+    padding: 0 0 0 15px;
+    display: inline;
+}
+
+nav ul li {
+    background-color: black;
     color: white;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+}
+
+nav ul li a {
+    color: white;
+}
+
+.row {
+    clear: both;
+}
+
+.col {
+    background: #333;
+    color: white;
+    border-radius: 5px;
+    float: left;
+    margin: .5%;
+    padding: 10px .5%;
+    width: 31%;
+}
+
+footer {
+    clear: both;
 }
