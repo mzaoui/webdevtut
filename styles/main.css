@@ -1,11 +1,30 @@
-.darkBG {
-    background: #999;
+.myPanel {
+    border: 1px solid #557060;
+    border-radius: 5px;
+    box-shadow: 5px 5px 3px #CCC;
+    margin: 3%;
 }
 
-.darkerBG {
-    background: #666;
+.myPanel .heading {
+    background: #AFE8C5;
+    border-radius: 5px 5px 0 0;
+    color: #557060;
+    padding: 10px 20px;
 }
 
-.darkestBG {
-    background: #333;
+.myPanel .body {
+    padding: 10px 20px;
+}
+
+.myPanel .showOnHover {
+    display: none;
+}
+
+.myPanel:hover {
+    border: 2px solid #557060;
+    box-shadow: 5px 5px 6px black;
+}
+
+.myPanel:hover .showOnHover {
+    display: inline-block;
 }
