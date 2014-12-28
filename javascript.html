@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Javascript</title>
+    <link rel="stylesheet" href="styles/javascript.css">
+</head>
+
+<body>
+    <div id="header">
+        <h1>My Site</h1>
+    </div>
+    <div id="content">
+        <h2>Hey, here's my site</h2>
+        <ul>
+            <li>milk</li>
+            <li>eggs</li>
+        </ul>
+        <input id='name' type='text'>
+        <button id="addOne">Add One</button>
+    </div>
+    <div id="footer">c2014 Me and Myself</div>
+
+    <script src="http://code.jquery.com/jquery-2.1.3.min.js">
+    </script>
+
+    <script>
+        $('#header h1').html('My Awesome Site');
+        $('ul').append('<li>veggies</li>');
+        $('ul').prepend('<li>apples</li>');
+        $('ul li:eq(1)').remove();
+
+        $('#addOne').click(function addValue() {
+            var value = $('#name').val();
+            $('ul').append('<li>' + value + '</li>');
+        });
+    </script>
+</body>
+</html>
