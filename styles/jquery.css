@@ -1,0 +1,8 @@
+.jumbotron {
+    text-align: center;
+}
+
+.jumbotron .menu-button{
+    padding: 5px 10px;
+    border-radius: 5px;
+}
