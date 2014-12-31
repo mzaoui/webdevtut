@@ -50,6 +50,36 @@ add(4, 5, function() {
 
 add(6, 7);
 
+var obj1 = {
+    foo: function(one, two, three) {
+
+        console.log(this);
+        console.log(this === window);
+        console.log(one, two, three);
+    }
+};
+
+var obj2 = {
+    foo: function(args) {
+
+        console.log(this);
+        console.log(this === window);
+        console.log(args);
+    }
+};
+
+var obj3 = {
+    foo: function() {
+
+        console.log(this);
+        console.log(this === window);
+    }
+};
+
+obj1.foo.call(window, 1, 2, 3);
+obj2.foo.apply(window, [1, 2, 3]);
+var myBoundFoo = obj3.foo.bind(window);
+myBoundFoo();
 
 $(document).ready(function() {
 
@@ -58,6 +88,24 @@ $(document).ready(function() {
     $("button").on("click", function() {
 
         a++;
-        alert(a);
+        console.log("button cliked " + a+ " times");
+    });
+});
+
+
+$("li").on("click", function() {
+
+    var currentTimes = parseInt($(this).find("span").html());
+    $(this).find("span").html(currentTimes + 1);
+});
+
+
+$("#open-div").on("click", function() {
+
+    var _self = this;
+
+    $("#div1").slideToggle(300, function() {
+
+        $(_self).toggleClass("active");
     });
 });
