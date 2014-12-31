@@ -1,11 +1,12 @@
+var a = "yay!";
 
 function add(first, second, callback) {
-    
-    console.log(first + second);
-    
-    if (callback) {
-        callback();
-    }
+   
+   console.log(first + second);
+   
+   if (callback) {
+       callback();
+   }
 }
 
 add(2, 3, function() {
@@ -19,3 +20,10 @@ add(4, 5, function() {
 });
 
 add(6, 7);
+
+$(document).ready(function() {
+    
+    $("button").on("click", function() {
+        alert(a);
+    });
+});
